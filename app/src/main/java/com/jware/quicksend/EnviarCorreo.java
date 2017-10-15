@@ -49,9 +49,9 @@ public class EnviarCorreo extends Activity {
                 Intent sndM = new Intent(Intent.ACTION_SENDTO);
                 sndM.setData(Uri.parse("mailto:"));
                 //sndM.setType("text/html");
-                sndM.putExtra(Intent.EXTRA_EMAIL, s_to);
-                sndM.putExtra(Intent.EXTRA_CC, s_cc);
-                sndM.putExtra(Intent.EXTRA_BCC, s_bcc);
+                sndM.putExtra(Intent.EXTRA_EMAIL, new String[]{ s_to});
+                sndM.putExtra(Intent.EXTRA_CC, new String[]{ s_cc});
+                sndM.putExtra(Intent.EXTRA_BCC, new String[]{ s_bcc});
                 sndM.putExtra(Intent.EXTRA_SUBJECT, s_sbj);
                 sndM.putExtra(Intent.EXTRA_TEXT, s_msg);
                 startActivity(Intent.createChooser(sndM, "Send Mail"));
