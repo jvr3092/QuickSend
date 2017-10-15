@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuickSend</string>
+    <string name="to">Para:</string>
+    <string name="cc">CC:</string>
+    <string name="bcc">BCC:</string>
+    <string name="sbj">Asunto:</string>
+    <string name="msg">Mensaje:</string>
+    <string name="send">Enviar</string>
+</resources>
